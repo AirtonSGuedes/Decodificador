@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="imagem/png" href="https://img.icons8.com/ios/50/000000/anonymous-mask.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./codifica.css" />
+    <title>Codifica</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>
+        <span class="corvermelha">E</span>ncr<span class="corvermelha">1</span>ptad<span class="corvermelha">0</span
+        >r
+      </h1>
+      <form>
+        <label for="mensagem" class="lab">Insira a mensagem:</label>
+        <textarea id="mensagem" cols="10" rows="4" placeholder=" O que deseja criptografar? "></textarea>
+
+        <select name="codigo" id="codigo">
+          <option value="" disabled selected>Selecione o tipo de código</option>
+          <option value="cesar">Cifra de César</option>
+          <option value="base64">Base 64</option>
+        </select>
+
+        <fieldset class="divChave">
+          <label for="chave" class="lab">Insira um incremento de 1 a 25:</label>
+          <input type="number" id="chave" value="1" max="26" />
+        </fieldset>
+
+        <fieldset class="radioCod">
+          <div class="divRadio">
+            <input
+            type="radio" 
+            name="cod"
+            class="radio"
+            id="cod" />
+            <label for="codificar" class="lab">Codificar</label>
+          </div>
+
+          <div class="divRadio">
+            <input type="radio" name="cod" class="radio" id="decod" />
+            <label for="decodificar"class="lab">Decodificar</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="resultado" class="lab">Resultado:</label>
+          <textarea
+            name="resultado"
+            id="resultado"
+            cols="10"
+            rows="4"
+            readonly
+          ></textarea>
+        </fieldset>
+
+        <button id="botaoResultado">
+          <p id="btn">
+            C<span class="corvermelha">0</span>dif<span class="corvermelha"
+              >1</span
+            >car ou Dec<span class="corvermelha">0</span>dif<span
+              class="corvermelha"
+              >1</span
+            >car?
+          </p>
+        </button>
+      </form>
+    </main>
+    <footer><a href="https://github.com/AirtonSGuedes"><img src="./imagens/icons8-github-50.png" alt="github"> </a>
+      <a href="https://www.instagram.com/a1rton_sg/"><img src="./imagens/icons8-instagram-50.png" alt="insta" ></a>
+     <a href="https://www.linkedin.com/in/airtonguedes"><img src="./imagens/icons8-linkedin-2-50.png" alt="linkedin"></a><p>Desenvolvido por Airton Guedes <br><span class="corvermelha">  © 2022</span></p>
+    </footer>
+
+    <script src="./codifica.js"></script>
+  </body>
+</html>
